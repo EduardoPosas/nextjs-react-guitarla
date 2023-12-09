@@ -5,11 +5,10 @@ export const metadata = {
   description: 'GuitarLa - Tienda de Guitarras',
 }
 
-const About = () => {
+function About() {
   return (
     <>
       <h1>Desde nosotros</h1>
-      <Link href='/'>Inicio</Link>
     </>
   )
 }

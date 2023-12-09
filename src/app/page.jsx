@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from '@/styles/page.module.css';
 
 export const metadata = {
@@ -6,11 +5,12 @@ export const metadata = {
   description: 'GuitarLa - Tienda de Guitarras',
 }
 
-export default function Home() {
+function Home() {
   return (
     <>
-      <h1>Hola mundo desde Next.js</h1>
-      <Link href='/about'>Nosotros</Link>
+      <h1>Desde Inicio</h1>
     </>
   )
 }
+
+export default Home;
