@@ -1,0 +1,57 @@
+.guitar {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .guitar {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.guitarImage {
+  height: 30rem;
+  object-fit: contain;
+  object-position: center;
+}
+
+.guitarContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.guitarName {
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.guitarDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.guitarPrice {
+  color: var(--clr-primary);
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+.guitarLink {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 300ms ease;
+}
+
+.guitarLink:hover {
+  background-color: var(--clr-primary);
+}
