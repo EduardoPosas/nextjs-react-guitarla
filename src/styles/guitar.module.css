@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.smallContainer {
+  padding: 5rem 0;
+  width: min(90%, 60rem);
+  margin-inline: auto;
+}
+
 @media (min-width: 992px) {
   .guitar {
     grid-template-columns: 2fr 3fr;
@@ -14,6 +20,10 @@
   height: 30rem;
   object-fit: contain;
   object-position: center;
+}
+
+.guitarHeight {
+  height: 50rem;
 }
 
 .guitarContent {

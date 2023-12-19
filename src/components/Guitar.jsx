@@ -20,7 +20,7 @@ function Guitar({ guitar }) {
         <p className={styles.guitarDescription}>{description}</p>
         <p className={styles.guitarPrice}>${price}</p>
         <Link
-          href={`/guitar/${url}`}
+          href={`/guitars/${url}`}
           className={styles.guitarLink}
         >Ver producto</Link>
       </div>

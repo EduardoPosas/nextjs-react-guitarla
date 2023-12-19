@@ -1,0 +1,26 @@
+.course {
+  padding: 5rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-column: 2/3;
+  }
+}
+
+.description {
+  line-height: 1.7;
+  font-weight: bold;
+  color: white;
+}
