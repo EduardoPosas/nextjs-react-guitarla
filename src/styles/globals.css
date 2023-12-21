@@ -46,3 +46,15 @@ a {
   color: var(--clr-primary);
   margin-bottom: 5rem;
 }
+
+/* Not found page */
+.error {
+  padding: 10rem 0;
+}
+
+.error-link {
+  display: flex;
+  justify-content: center;
+  color: var(--clr-black);
+  text-decoration: underline;
+}

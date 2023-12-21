@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import styles from '@/styles/header.module.css';
 
 import logo from '../../public/images/logo.svg'
+import shoppingCart from '../../public/images/carrito.png';
 
 function Header() {
   const pathname = usePathname();
@@ -38,6 +39,12 @@ function Header() {
             href='/blog'
             className={`${styles.navigationLink} ${pathname === '/blog' ? styles.linkActive : ''}`}
           >Blog</Link>
+          <Link
+            href='/cart'
+            className={styles.cart}
+          >
+            <Image src={shoppingCart} alt='shopping cart' />
+          </Link>
         </nav>
       </div>
     </header>

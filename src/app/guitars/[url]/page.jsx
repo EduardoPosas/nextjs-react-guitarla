@@ -1,4 +1,7 @@
 import Image from 'next/image';
+
+import Form from './Form';
+
 import styles from '@/styles/guitar.module.css';
 
 export function generateMetadata({ params }) {
@@ -95,6 +98,7 @@ async function Guitar({ params }) {
         <h3 className={styles.guitarName}>{name}</h3>
         <p className={styles.guitarDescription}>{description}</p>
         <p className={styles.guitarPrice}>${price}</p>
+        <Form guitar={guitar} />
       </div>
     </main>
   )

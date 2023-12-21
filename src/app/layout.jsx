@@ -1,3 +1,4 @@
+import CartProvider from '@/context/CartProvider';
 import { Outfit } from 'next/font/google';
 
 import '@/styles/globals.css';
@@ -11,7 +12,6 @@ const outfit = Outfit({
   variable: '--ff-global'
 });
 
-
 export default function RootLayout({ children }) {
   return (
     <html
@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Header />
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
         <Footer />
       </body>
     </html>

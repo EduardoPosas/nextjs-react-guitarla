@@ -27,6 +27,7 @@
 .navigation {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -43,4 +44,8 @@
 .linkActive {
   background-color: var(--clr-primary);
   border-radius: 0.5rem;
+}
+
+.cart {
+  width: 2rem;
 }
