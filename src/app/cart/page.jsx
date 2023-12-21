@@ -6,16 +6,19 @@ import Image from 'next/image';
 
 import styles from '@/styles/cart.module.css';
 
-
 function Cart() {
   const { cart, updateQuantity, deleteProduct } = useCartContext();
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
+    document.title = 'GuitarLa - Shopping Cart'
+  }, []);
+
+  useEffect(() => {
     const totalDue = cart.reduce((acc, curr) => acc + (curr.price * curr.quantity), 0);
     setTotal(totalDue);
   }, [cart]);
-  
+
 
   return (
     <main className={styles.cart}>
